@@ -3,4 +3,4 @@
 [Link Repository](https://github.com/agillstrz/GIT)
 
 ### Bukti Screenshot insights=>network
-![insights=>network](./screenshot.png)
+![insights=>network](../screenshots/graph.png)
