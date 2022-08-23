@@ -1,6 +1,6 @@
-### Jawaban Tugas Github
+### Jawaban Tugas Github :
 
 [Link Repository](https://github.com/agillstrz/GIT)
 
-### Bukti Screenshot insights=>network*
+### Bukti Screenshot insights=>network
 ![insights=>network](./screenshot.png)
