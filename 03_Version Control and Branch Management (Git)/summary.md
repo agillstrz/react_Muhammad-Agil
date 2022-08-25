@@ -13,7 +13,6 @@ Tata cara membuat repository pada github:
 - klik create repository
 
 
-
 **Catatan membuat repository**
 Public : dapat dilihat semua orang, bersifat umum
 Private :  hanya dapat diakses oleh pembuat repository / akun yang ditambahkan secara internal.

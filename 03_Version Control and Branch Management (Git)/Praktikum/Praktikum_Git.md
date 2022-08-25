@@ -1,4 +1,4 @@
-### Jawaban Tugas Github :
+### Jawaban Praktikum GIT:
 
 [Link Repository](https://github.com/agillstrz/GIT)
 
