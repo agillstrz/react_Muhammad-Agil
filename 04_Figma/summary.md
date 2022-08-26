@@ -11,4 +11,4 @@ d. mempunyai banyak plugin
 Kelemahan : 
 a. Harus tersambung ke internet  
 
-3. Mempelajari tahapan tahapan pembuatan desain web menggunakan figma
+3. Mempelajari tahapan tahapan pembuatan desain web menggunakan figma.
