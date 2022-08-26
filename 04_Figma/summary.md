@@ -5,7 +5,7 @@
 2. Figma memiliki kelebihan dan kekurangan  
 **kelebihan :**  
 a. Gratis  
-b. Mmepunyai fitur kolaborasi dengan pengguna lain secara real-time  
+b. Mempunyai fitur kolaborasi dengan pengguna lain secara real-time  
 c. Dapat berbagi file dengan mudah   
 d. mempunyai banyak plugin  
 **Kelemahan :**  
