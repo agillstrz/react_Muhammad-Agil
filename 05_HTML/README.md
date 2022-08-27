@@ -1,6 +1,6 @@
-## 3 point yang dipelajari.
+## 3 point yang dipelajari pada HTML.
 
-1. HTML merupakan bahasa markup yang digunakan untuk membuat halaman website.  
+1. HTML (Hypertext Markup Language) merupakan bahasa standar yang digunakan untuk membuat halaman website.  
 
 2. HTML memiliki berbagai tag, diantaranya :
 - Tag P untuk membuat paragraph
@@ -10,5 +10,5 @@
 
 3. List HTML  
  ada dua jenis list dalam HTML:   
-a. ordered list adalah list yang terurut  
-b. Unordered list adalah list yang tidak terurut
+a. ordered list adalah list yang terurut.   
+b. Unordered list adalah list yang tidak terurut.
