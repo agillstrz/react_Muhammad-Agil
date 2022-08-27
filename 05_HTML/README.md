@@ -2,7 +2,7 @@
 
 1. HTML merupakan bahasa markup yang digunakan untuk membuat halaman website.  
 
-2. HTML memiliki berbagai tag, diantaranya :  
+2. HTML memiliki berbagai tag, diantaranya :
 - Tag P untuk membuat paragraph
 - Tag Heading untuk membuat judul pada halaman website  
 - tag B untuk mengubah text menjadi bold   
