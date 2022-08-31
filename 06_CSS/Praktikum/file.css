@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background-image: url(./img/sample-pattern.png);
+}
+header{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(000, 000, 000, .70)
+}
+nav{
+    background-color: white;
+    padding: 15px ;
+    position: relative;
+}
+nav ul {
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    justify-content: end;
+
+}
+li a{
+    font-size: 19px;
+    padding-right: 5px;
+    text-decoration: none;
+
+}
+
+nav .brand img{
+position: absolute;    
+    height: 30px;
+}
+.content{
+    background-color: white;
+    margin: 5px 250px;
+    text-transform: capitalize;
+    padding: 40px 30px;
+}
+.content h2{
+    padding-bottom: 20px;
+    color: #66a1d1;
+}
+.container{
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+        background-color: white;
+        margin: 8px 20px;
+        text-transform: capitalize;
+        padding: 40px 30px;
+    }
+}
