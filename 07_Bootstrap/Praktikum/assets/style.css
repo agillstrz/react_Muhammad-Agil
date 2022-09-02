@@ -1,0 +1,52 @@
+
+.content1 {
+   margin: 100px 0 170px 0;
+}
+.content2 {
+    margin-bottom: 50px;
+}
+.hehe > a{
+    display: block;
+}
+.svg > img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.svg > .tittle{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, .about > ul>li > a:hover{
+    color: #939559;
+}
+.footer > div > span{
+    font-weight: bold;
+}
+
+.footer{
+    background-color: rgb(37, 32, 32) !important;
+    padding: 0 100px;
+}
+
+.about > ul>li>a{
+    color: white;
+}
+
+@media only screen and (max-width: 6s00px) {
+    .content1 {
+        margin: 90px 0 20px 0;
+     }
+     .footer{
+        background-color: rgb(37, 32, 32) !important;
+        padding: 0 20px;
+    }
+    .about{
+        padding: 10px 0;
+    }
+  
+ }
+
