@@ -3,5 +3,6 @@
 
 let arr = [1.5 ,2.56,5.1,12.33];
 
+// jawaban no 6
 const HASIL = arr.map(m=>Math.round(m));
 console.log(HASIL);

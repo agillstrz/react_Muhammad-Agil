@@ -5,6 +5,7 @@
 let bdays = ['10-17','05-19','20-19'];
 //expect output -> ['10/17','05/19','20/19']
 
+// jawaban no 4
 const HASIL = bdays.map(m=>m.replace('-','/'));
 console.log(HASIL);
 
