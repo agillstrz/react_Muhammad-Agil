@@ -5,6 +5,6 @@
 let bdays = ['10-17','05-19','20-19'];
 //expect output -> ['10/17','05/19','20/19']
 
-const hasil = bdays.map(m=>m.replace('-','/'));
-console.log(hasil);
+const HASIL = bdays.map(m=>m.replace('-','/'));
+console.log(HASIL);
 

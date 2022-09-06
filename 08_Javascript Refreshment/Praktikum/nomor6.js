@@ -3,5 +3,5 @@
 
 let arr = [1.5 ,2.56,5.1,12.33];
 
-const hasil = arr.map(m=>Math.round(m));
-console.log(hasil);
+const HASIL = arr.map(m=>Math.round(m));
+console.log(HASIL);
