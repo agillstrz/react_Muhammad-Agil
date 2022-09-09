@@ -2,12 +2,12 @@
 	1. nama variable, function dan Class.
 	2. cara mendeklarasikan child Class dan fungsi didalamnya.
 
- alasan dari tiap kekurangan :  
+ **alasan dari tiap kekurangan** :  
  
  1. untuk nama variabel dan function sebaiknya menggunakan camelCase dan untuk nama class sebaiknya diawali dengan huruf kapital.
 
  ```javascript
-    //kesalahan pada soal :
+    //soal :
     class user{}
     class userservice{}
     var username;
