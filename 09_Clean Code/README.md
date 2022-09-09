@@ -6,10 +6,10 @@ Ada beberapa Karakteristik clean code diantaranya :
 - Mudah dipahami
 - mudah dieja dan dicari
 - singkat namun mendeskripsikan konteks
-- konsisten
-- komentar
-- good function
-- formatting
+- Konsisten
+- Komentar
+- Good function
+- Formatting
 
 ### 2. clean code principle
 **KISS** (Keep It So Simple)  
