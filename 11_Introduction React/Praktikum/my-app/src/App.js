@@ -1,7 +1,7 @@
 import "./assets/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./component/Navbar";
-import Home from "./component/Home";
+import Home from "./Home";
 
 function App() {
   return (

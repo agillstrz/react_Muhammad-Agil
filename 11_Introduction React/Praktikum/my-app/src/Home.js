@@ -1,4 +1,4 @@
-import bodyImage from "../assets/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
+import bodyImage from "./assets/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
 
 const Home = () => {
   return (
