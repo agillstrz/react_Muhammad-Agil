@@ -1,0 +1,20 @@
+.card {
+  height: 20rem;
+}
+.card > img {
+  padding: 8px;
+}
+
+.todolist {
+  width: 25%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 10px;
+}
+.todolist > p {
+  font-weight: bold;
+}
