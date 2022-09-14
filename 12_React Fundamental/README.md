@@ -15,8 +15,8 @@ Komponen React adalah bagian kode yang dapat digunakan kembali yang digunakan un
 
 **lifecycle method yang umum :**
 
-**1. render()**
-Fungsi yang paling sering dipakai Required pada class component Pure function. Tidak boleh ada setState()
+1. render()
+   Fungsi yang paling sering dipakai Required pada class component Pure function. Tidak boleh ada setState()
 
 ```js
 class Hello extends Component {
@@ -26,12 +26,12 @@ class Hello extends Component {
 }
 ```
 
-**2. componentDidMount()**
-Dipanggil ketika component sudah di render untuk pertama kali
-Tempat yang tepat untuk pemanggilan API
-Boleh ada setState()
-**3. componentDidUpdate()**
-Dipanggil ketika terjadi update (props atau state berubah)
-**4. componentWillUnmount()**
-Dipanggil ketika component akan dihancurkan
-Cocok untuk clean up actions
+2. componentDidMount()
+   Dipanggil ketika component sudah di render untuk pertama kali
+   Tempat yang tepat untuk pemanggilan API
+   Boleh ada setState()
+3. componentDidUpdate()
+   Dipanggil ketika terjadi update (props atau state berubah)
+4. componentWillUnmount()
+   Dipanggil ketika component akan dihancurkan
+   Cocok untuk clean up actions
