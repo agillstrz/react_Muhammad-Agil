@@ -54,7 +54,7 @@ function TodoList() {
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                placeholder="Add to do..."
+                placeholder="Add todo..."
               />
             </div>
             <button type="submit" className="btn-hover">
