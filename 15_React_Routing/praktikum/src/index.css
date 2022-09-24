@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-hover {
+  @apply font-semibold hover:bg-stone-600 px-2 rounded-full hover:text-white opacity-75;
+}
+.content {
+  @apply lg:mx-[200px] mx-10;
+}
+ul > li {
+  @apply hover:text-green-900;
+}
