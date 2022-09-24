@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.borders {
-  @apply border border-black;
-}
 .input {
   @apply border-2 py-1 focus:outline-none w-full bg-slate-50 focus:bg-white;
 }
 .forml {
-  @apply px-2 mb-2;
+  @apply px-2 mb-2 w-full;
 }
 label {
   @apply capitalize;
 }
 .form-body {
-  @apply w-[100%] lg:w-[40%] shadow-2xl  h-1/2 text-left  py-3 px-5;
+  @apply w-[100%] lg:w-[40%] shadow-2xl  h-1/2 text-left py-3 px-5;
 }
 .btn-submit {
   @apply py-2 px-3 bg-emerald-800 font-bold text-white rounded-lg;

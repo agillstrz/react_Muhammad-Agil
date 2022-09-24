@@ -51,7 +51,7 @@ function Form() {
           <h1 className="uppercase w-full py-2 border-2 rounded-lg text-center mb-4 font-bold text-lg">
             pendaftaran peserta coding bootcamp
           </h1>
-          <div className="forml w-full">
+          <div className="forml ">
             <label htmlFor="name">
               Nama Lengkap
               <span className="span-error"> {formErrors.nama}</span>
@@ -66,7 +66,7 @@ function Form() {
             />
           </div>
 
-          <div className="forml w-full">
+          <div className="forml ">
             <label htmlFor="noHp">
               nomor handphone{" "}
               <span className="span-error"> {formErrors.nohp}</span>
@@ -80,7 +80,7 @@ function Form() {
             />
           </div>
 
-          <div className="w-full forml">
+          <div className=" forml">
             <label htmlFor="email">
               Email <span className="span-error"> {formErrors.email}</span>
             </label>
@@ -93,7 +93,7 @@ function Form() {
             />
           </div>
 
-          <div className="w-full forml">
+          <div className=" forml">
             <p>
               Latar Belakang Pendidikan :
               <span className="span-error"> {formErrors.pendidikan}</span>
@@ -117,13 +117,13 @@ function Form() {
             </div>
           </div>
 
-          <div className="w-full forml">
+          <div className=" forml">
             <label>
               Kelas Coding Yang Dipilih :
               <span className="span-error"> {formErrors.kelas}</span>
             </label>
             <select
-              className="w-full border-2"
+              className="input"
               name="kelas"
               onChange={handleChange}
               value={data.kelas}
@@ -133,7 +133,7 @@ function Form() {
               <option>3. full stack developer</option>
             </select>
           </div>
-          <div className="w-full forml">
+          <div className="forml">
             <label htmlFor="surat">
               Foto surat kesungguhan :{" "}
               <span className="span-error">{formErrors.surat}</span>
@@ -148,7 +148,7 @@ function Form() {
             />
           </div>
 
-          <div className="w-full forml">
+          <div className="forml">
             <label htmlFor="harapan">Harapan untuk coding bootcamp ini :</label>
             <textarea
               id="harapan"
@@ -160,7 +160,7 @@ function Form() {
             />
           </div>
 
-          <div className="forml w-full flex gap-3 ">
+          <div className="forml flex gap-3 ">
             <button
               disabled={btn}
               className={`${!btn ? "btn-submit" : "btn-error"}`}
