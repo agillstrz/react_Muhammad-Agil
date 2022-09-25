@@ -24,5 +24,5 @@ label {
   @apply py-2 px-3 bg-red-600 hover:bg-red-900 transition-colors duration-150 ease-in font-bold text-white rounded-lg;
 }
 .span-error {
-  @apply text-red-600 italic;
+  @apply text-red-600 italic text-[12px] font-bold;
 }

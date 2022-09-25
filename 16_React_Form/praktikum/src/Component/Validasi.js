@@ -1,7 +1,7 @@
 const Validasi = (value) => {
   const error = {};
-  const notNama = /[0-9]/;
-  const notHp = /[a-zA-Z]/;
+  const notNama = /^[0-9]$/;
+  const notHp = /^[a-zA-Z]$/;
   const regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   if (!value.nama) {
