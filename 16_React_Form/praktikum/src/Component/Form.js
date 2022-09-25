@@ -26,6 +26,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`${data.nama} Berhasil Mendaftar`);
+    setDatas(formSiswa);
   };
   const handleReset = (e) => {
     e.preventDefault();
