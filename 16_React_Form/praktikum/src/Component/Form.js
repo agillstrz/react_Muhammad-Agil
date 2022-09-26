@@ -28,10 +28,8 @@ function Form() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDatas({ ...data, [name]: value });
+
     if (name === "nama") {
-      if (!value) {
-        setFormErrors({ ...formErrors, nama: "nama harus diisi" });
-      }
       if (!value.match(regexNama)) {
         setFormErrors({
           ...formErrors,
