@@ -1,12 +1,10 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
-import Validasi from "./Validasi";
 
 function Form() {
   const formSiswa = {
     nama: "",
-    nohp: "",
+    noHp: "",
     email: "",
     pendidikan: "",
     kelas: "",
@@ -14,36 +12,81 @@ function Form() {
     harapan: "",
   };
 
+  const pesanError = {
+    nama: "",
+    noHp: "",
+    email: "",
+  };
+
+  const regexNama = /^[a-zA-Z ]*$/;
+  const regexHp = /^[0-9]{9,12}$/;
+  const regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
   const [data, setDatas] = useState(formSiswa);
-  const [btn, setbtn] = useState(true);
-  const [formErrors, setformErrorr] = useState({});
+  const [formErrors, setFormErrors] = useState(pesanError);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDatas({ ...data, [name]: value });
+    if (name === "nama") {
+      if (!value) {
+        setFormErrors({ ...formErrors, nama: "nama harus diisi" });
+      }
+      if (!value.match(regexNama)) {
+        setFormErrors({
+          ...formErrors,
+          nama: "*Nama harus berupa huruf",
+        });
+      } else {
+        setFormErrors({
+          ...formErrors,
+          nama: "",
+        });
+      }
+    }
+
+    if (name === "noHp") {
+      if (!value.match(regexHp)) {
+        setFormErrors({
+          ...formErrors,
+          noHp: "*Nomor Hp harus angka dan berjumlah 9-12 karakter",
+        });
+      } else {
+        setFormErrors({
+          ...formErrors,
+          noHp: "",
+        });
+      }
+    }
+
+    if (name === "email") {
+      if (!value.match(regexemail)) {
+        setFormErrors({
+          ...formErrors,
+          email: "*Email tidak sesuai",
+        });
+      } else {
+        setFormErrors({
+          ...formErrors,
+          email: "",
+        });
+      }
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`${data.nama} Berhasil Mendaftar`);
-    setDatas(formSiswa);
+    if (!formErrors.nama && !formErrors.noHp && !formErrors.email) {
+      alert(`${data.nama} berhasil mendaftar`);
+    } else {
+      alert(`Data belum lengkap atau tidak sesuai, ulangi pendaftaran`);
+    }
   };
+
   const handleReset = (e) => {
     e.preventDefault();
     setDatas(formSiswa);
   };
-
-  useEffect(() => {
-    setformErrorr(Validasi(data));
-  }, [data]);
-
-  useEffect(() => {
-    if (Object.keys(formErrors).length === 0) {
-      setbtn(false);
-    } else {
-      setbtn(true);
-    }
-  }, [formErrors]);
 
   return (
     <div className="py-5">
@@ -70,14 +113,14 @@ function Form() {
           <div className="forml ">
             <label htmlFor="noHp">
               nomor handphone{" "}
-              <span className="span-error"> {formErrors.nohp}</span>
+              <span className="span-error"> {formErrors.noHp}</span>
             </label>
             <input
               onChange={handleChange}
               id="noHp"
-              name="nohp"
+              name="noHp"
               className="input"
-              value={data.nohp}
+              value={data.noHp}
             />
           </div>
 
@@ -95,16 +138,14 @@ function Form() {
           </div>
 
           <div className=" forml">
-            <p>
-              Latar Belakang Pendidikan :
-              <span className="span-error"> {formErrors.pendidikan}</span>
-            </p>
+            <p>Latar Belakang Pendidikan :</p>
             <div className="flex gap-1">
               <input
                 onChange={handleChange}
                 value="IT"
                 name="pendidikan"
                 type="radio"
+                required
               />
               <label htmlFor="pendidikan">IT</label>
               <input
@@ -119,15 +160,13 @@ function Form() {
           </div>
 
           <div className=" forml">
-            <label>
-              Kelas Coding Yang Dipilih :
-              <span className="span-error"> {formErrors.kelas}</span>
-            </label>
+            <label>Kelas Coding Yang Dipilih :</label>
             <select
               className="input"
               name="kelas"
               onChange={handleChange}
               value={data.kelas}
+              required
             >
               <option>1. Koding backend with golang</option>
               <option>2. Koding frontend with ReactJS</option>
@@ -135,10 +174,7 @@ function Form() {
             </select>
           </div>
           <div className="forml">
-            <label htmlFor="surat">
-              Foto surat kesungguhan :{" "}
-              <span className="span-error">{formErrors.surat}</span>
-            </label>
+            <label htmlFor="surat">Foto surat kesungguhan : </label>
             <input
               onChange={handleChange}
               id="surat"
@@ -146,6 +182,7 @@ function Form() {
               className="input"
               type="file"
               value={data.surat}
+              required
             />
           </div>
 
@@ -162,12 +199,7 @@ function Form() {
           </div>
 
           <div className="forml flex gap-3 ">
-            <button
-              disabled={btn}
-              className={`${!btn ? "btn-submit" : "btn-error"}`}
-            >
-              SUBMIT
-            </button>
+            <button className="btn-submit">SUBMIT</button>
             <button onClick={handleReset} className="btn-reset">
               RESET
             </button>
